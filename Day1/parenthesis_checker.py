@@ -28,4 +28,15 @@ while True:
         break
     check(exp)
     
-    
+
+"""
+python parenthesis_checker.py 
+Welcome for Expression Validator! 
+Press q to quit
+Enter the Expression: (){}
+PASSED
+Enter the Expression: {{(
+INVALID !!!
+Enter the Expression: {})
+INVALID!!!!
+"""

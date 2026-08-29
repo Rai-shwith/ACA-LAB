@@ -37,3 +37,48 @@ while True:
 
     
     
+"""
+python stack.py 
+Enter 
+'1' for Push 
+'2' for Pop 
+'q' for quitting: 1
+Enter Element: 2
+pushing 2
+Enter 
+'1' for Push 
+'2' for Pop 
+'q' for quitting: 1
+Enter Element: 5
+pushing 5
+Enter 
+'1' for Push 
+'2' for Pop 
+'q' for quitting: 1
+Enter Element: 10
+pushing 10
+Enter 
+'1' for Push 
+'2' for Pop 
+'q' for quitting: 2
+Popped 10
+Enter 
+'1' for Push 
+'2' for Pop 
+'q' for quitting: 2
+Popped 5
+Enter 
+'1' for Push 
+'2' for Pop 
+'q' for quitting: 2
+Popped 2
+Enter 
+'1' for Push 
+'2' for Pop 
+'q' for quitting: 2
+Empty Stack
+Enter 
+'1' for Push 
+'2' for Pop 
+'q' for quitting: 
+"""

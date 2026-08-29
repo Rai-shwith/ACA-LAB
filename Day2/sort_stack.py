@@ -19,4 +19,20 @@ while True:
         print("Bye Bye!")
         break
     print(sort_stack(arr))
+
+"""
+ python sort_stack.py 
+Enter the elements by leaving space(eg: 1 2 3):
+1 -2 2 3 4 0 -1 -3
+[-3, -2, -1, 0, 1, 2, 3, 4]
+Enter the elements by leaving space(eg: 1 2 3):
+0 1 2 3 4 
+[0, 1, 2, 3, 4]
+Enter the elements by leaving space(eg: 1 2 3):
+4 3 2 1 
+[1, 2, 3, 4]
+Enter the elements by leaving space(eg: 1 2 3):
+
+Bye Bye!
+"""
     
