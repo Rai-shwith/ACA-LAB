@@ -1,3 +1,4 @@
+# Write a program to merge two sorted linked lists into a single sorted linked list.
 class Node:
     def __init__(self,data=0,nxt=None):
         self.val = data

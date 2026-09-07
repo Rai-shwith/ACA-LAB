@@ -1,3 +1,4 @@
+# Write a program to reverse a singly linked list.
 class Node:
     def __init__(self,data=0,nxt=None):
         self.val = data

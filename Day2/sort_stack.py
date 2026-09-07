@@ -1,3 +1,4 @@
+# Write a program to sort a stack using an auxiliary stack.
 def sort_stack(stack1):
     stack2 = []
     

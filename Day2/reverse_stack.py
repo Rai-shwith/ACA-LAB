@@ -1,3 +1,4 @@
+# Write a program to reverse a stack using an auxiliary stack.
 def reverse_stack(stack1):
     stack2 = []
     while stack1:

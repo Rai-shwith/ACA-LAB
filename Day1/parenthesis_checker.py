@@ -1,3 +1,4 @@
+# Write a program to check whether a given string of parentheses/brackets is balanced or valid.
 def check(expression):
     stack = []
     charMap = {
