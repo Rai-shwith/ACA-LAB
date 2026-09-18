@@ -42,7 +42,7 @@ class Heap:
         return ans
         
 
-    def heapsort(self):
+    def heap_sort(self):
         backup_heap = self.arr.copy()
         backup_n = self.n
         sorted_arr = []
@@ -51,10 +51,10 @@ class Heap:
         self.arr = backup_heap
         self.n = backup_n
         return sorted_arr
-
-arr = map(int,input("Enter the array elements (eg: 1 2 3 ): ").split())
-h = Heap(list(arr))
-print(f"Sorted Array: ", h.heapsort())
+if __name__ == "__main__":
+    arr = map(int,input("Enter the array elements (eg: 1 2 3 ): ").split())
+    h = Heap(list(arr))
+    print(f"Sorted Array: ", h.heap_sort())
 
 
 """
