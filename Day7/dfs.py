@@ -1,4 +1,4 @@
-
+# How can we traverse a graph using depth-first search?
 def dfs(adj,src):
     stack = [src]
     n = len(adj)
@@ -28,5 +28,13 @@ graph = []
 for i in range(n):
     graph.append(list(map(int,input(f"Enter the neighbor nodes of {i} node: eg: 1 2 3 : ").split())))
 dfs(graph,0)
+
+"""
+1. Push the source node onto a stack and create a visited array.
+2. Pop a node from the stack and print it if it has not been visited.
+3. Mark the node as visited.
+4. Push each unvisited neighbor onto the stack.
+5. Continue until the stack is empty.
+"""
     
     

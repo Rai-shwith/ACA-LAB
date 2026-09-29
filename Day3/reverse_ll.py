@@ -1,4 +1,4 @@
-# Write a program to reverse a singly linked list.
+# How can we reverse a singly linked list in place?
 class Node:
     def __init__(self,data=0,nxt=None):
         self.val = data
@@ -60,4 +60,12 @@ After Reversal :
 9-> 8-> 5-> 2-> 1
 Enter the LL elements (eg: 1 2 3 4): 
 Bye Bye!!
+"""
+
+"""
+1. Set a current pointer to the head and a previous pointer to None.
+2. Save the current node's next pointer before changing it.
+3. Point the current node backward to the previous node.
+4. Advance both pointers until the current pointer reaches None.
+5. Return the previous pointer as the new head.
 """

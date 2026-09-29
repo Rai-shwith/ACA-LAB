@@ -1,4 +1,4 @@
-# Write a program to merge two sorted linked lists into a single sorted linked list.
+# How can we merge two sorted linked lists into one sorted linked list?
 class Node:
     def __init__(self,data=0,nxt=None):
         self.val = data
@@ -84,4 +84,12 @@ After merging :
 Enter the First sorted LL  elements (eg: 1 2 3 4): 
 Enter the Second sorted LL elements (eg: 1 2 3 4): 
 Bye Bye!!
+"""
+
+"""
+1. Create a dummy node and two pointers at the heads of the input lists.
+2. Compare the pointed values and attach the smaller node to the merged list.
+3. Advance the pointer and merged-list tail after each attachment.
+4. Attach the remaining nodes from whichever list is not exhausted.
+5. Return the node after the dummy head.
 """

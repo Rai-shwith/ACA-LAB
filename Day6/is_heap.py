@@ -1,3 +1,4 @@
+# How can we determine whether an array represents a min-heap or max-heap?
 def is_heap(arr,isMin):
     n = len(arr)
     for i in range((n//2-1),-1,-1):
@@ -13,3 +14,10 @@ while True:
         print("Its a Heap")
     else:
         print("Nah, dude its not heap")
+
+"""
+1. Start at the last internal node and move backward toward the root.
+2. Compare each node with its two children to determine whether the required heap relation holds.
+3. Return False immediately when a node violates the selected min-heap or max-heap rule.
+4. Return True after every internal node passes the check.
+"""

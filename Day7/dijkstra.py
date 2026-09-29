@@ -1,3 +1,4 @@
+# How can we find the shortest weighted path between two graph nodes?
 from heapq import heappush,heappop
 def dijkstra(adj,src,dst):
     pq = []
@@ -15,14 +16,14 @@ def dijkstra(adj,src,dst):
     return result[dst]
 
 
-n = int(input("Enter the number of nodes: "))
-graph = []
-for i in range(n):
-    print("Enter the {i} node edges eg ( n, w ): ")
-    while True:
-        val = tuple(map,input("Enter (n, w): ").split())
-        if not val:
-            break
+# n = int(input("Enter the number of nodes: "))
+# graph = []
+# for i in range(n):
+#     print("Enter the {i} node edges eg ( n, w ): ")
+#     while True:
+#         val = tuple(map,input("Enter (n, w): ").split())
+#         if not val:
+#             break
         
         
         
@@ -34,3 +35,11 @@ graph = [
     [(1,10),(2,6)]
 ]
 print(dijkstra(graph,0,3))
+
+"""
+1. Initialize every distance to infinity and set the source distance to zero.
+2. Put the source node and its distance into a priority queue.
+3. Repeatedly remove the node with the smallest known distance.
+4. Relax each outgoing edge and update the neighbor when a shorter distance is found.
+5. Return the recorded distance for the destination node.
+"""

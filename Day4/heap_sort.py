@@ -1,4 +1,4 @@
-# Write a program to demonstrate heap sort using heap data structure
+# How can we sort an array using a heap data structure?
 class Heap:
     def __init__(self, arr=[]):
         self.n = len(arr)
@@ -61,4 +61,11 @@ if __name__ == "__main__":
 $ python heap_sort.py 
 Enter the array elements (eg: 1 2 3 ): 1 -4 20 9 8 
 Sorted Array:  [-4, 1, 8, 9, 20]
+"""
+
+"""
+1. Build a min-heap from the input array by sinking each internal node.
+2. Repeatedly remove the heap root, which is the smallest remaining element.
+3. Restore the heap property after each removal by sinking the replacement root.
+4. Append each removed root to the result in ascending order.
 """

@@ -1,4 +1,4 @@
-# Write a program to check whether a given string of parentheses/brackets is balanced or valid.
+# How can we check whether a string of parentheses and brackets is balanced?
 def check(expression):
     stack = []
     charMap = {
@@ -40,4 +40,12 @@ Enter the Expression: {{(
 INVALID !!!
 Enter the Expression: {})
 INVALID!!!!
+"""
+
+"""
+1. Create an empty stack and a map from each closing bracket to its matching opening bracket.
+2. Scan the expression and ignore characters that are not brackets.
+3. Push opening brackets onto the stack.
+4. For each closing bracket, reject the expression if the stack is empty or its top does not match.
+5. Accept the expression only when the stack is empty after the scan.
 """

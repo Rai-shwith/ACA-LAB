@@ -1,4 +1,4 @@
-# Write a program to reverse a stack using an auxiliary stack.
+# How can we reverse a stack using an auxiliary stack?
 def reverse_stack(stack1):
     stack2 = []
     while stack1:
@@ -24,4 +24,10 @@ Enter the elements by leaving space(eg: 1 2 3):
 Enter the elements by leaving space(eg: 1 2 3):
 
 Bye Bye!
+"""
+
+"""
+1. Create an empty auxiliary stack.
+2. Pop each element from the input stack and push it onto the auxiliary stack.
+3. Return the auxiliary stack after the input stack is empty.
 """

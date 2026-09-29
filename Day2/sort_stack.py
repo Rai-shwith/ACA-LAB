@@ -1,4 +1,4 @@
-# Write a program to sort a stack using an auxiliary stack.
+# How can we sort a stack using an auxiliary stack?
 def sort_stack(stack1):
     stack2 = []
     
@@ -35,5 +35,13 @@ Enter the elements by leaving space(eg: 1 2 3):
 Enter the elements by leaving space(eg: 1 2 3):
 
 Bye Bye!
+"""
+
+"""
+1. Create an empty auxiliary stack.
+2. Pop one element from the input stack at a time.
+3. Move larger elements from the auxiliary stack back to the input stack until the new element is in order.
+4. Push the new element onto the auxiliary stack.
+5. Return the auxiliary stack when all input elements have been placed.
 """
     

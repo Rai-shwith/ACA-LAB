@@ -1,3 +1,4 @@
+# How can we detect a cycle in a singly linked list?
 class Node:
     def __init__(self,val,next=None):
         self.val = val
@@ -40,3 +41,10 @@ if detect_cycle(head):
     print("Bro, It has cycle")
 else:
     print("No cycle, dude!")
+
+"""
+1. Return no cycle for an empty list.
+2. Move a slow pointer one node at a time and a fast pointer two nodes at a time.
+3. If the pointers meet, return True because the list contains a cycle.
+4. If the fast pointer reaches the end, return False.
+"""

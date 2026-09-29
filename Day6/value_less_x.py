@@ -1,3 +1,4 @@
+# How can we print every heap value that is less than a given value x?
 from Day4.heap_sort import Heap
 
 def print_less_than_x(heap,x):
@@ -19,4 +20,11 @@ while True:
     x = int(input("Enter X: "))
     heap = Heap(nums)
     dfs(heap,0,x)
+
+"""
+1. Start a traversal at the root of the heap.
+2. If the current node is less than x, print it.
+3. Stop exploring a branch when its node is not less than x, using the heap ordering.
+4. Recursively visit the left and right child indices for eligible nodes.
+"""
     

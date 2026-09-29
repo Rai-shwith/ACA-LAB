@@ -1,3 +1,4 @@
+# How can we find the middle node of a singly linked list?
 class Node:
     def __init__(self,val,next=None):
         self.val = val
@@ -32,3 +33,10 @@ if middle:
     print(f"Middle element is {middle.val}")
 else:
     print("No middle element found.")
+
+"""
+1. Return None for an empty list.
+2. Move a slow pointer one node at a time and a fast pointer two nodes at a time.
+3. When the fast pointer reaches the end, the slow pointer is at the middle.
+4. Return the slow pointer.
+"""

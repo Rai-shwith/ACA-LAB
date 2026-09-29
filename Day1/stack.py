@@ -1,4 +1,4 @@
-# Write a program to implement a stack using two queues.
+# How can we implement a stack using two queues?
 from collections import deque
 
 class Stack:
@@ -82,4 +82,12 @@ Enter
 '1' for Push
 '2' for Pop
 'q' for quitting:
+"""
+
+"""
+1. Keep the current stack order in the first queue and use the second queue as temporary storage.
+2. To push an element, add it to the second queue first.
+3. Move every element from the first queue behind the new element.
+4. Swap the queue references so the second queue becomes the active stack queue.
+5. To pop, remove from the front of the active queue, or report an empty stack.
 """
